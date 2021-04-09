@@ -254,6 +254,155 @@ nav {
   margin-bottom: 96px;
 }
 
+.section2 {
+  background-color: #16a086;
+}
+
+.section2 > div {
+  padding:97px 0 137px;
+}
+.section2-title {
+  color: #FFF;
+  font-size: 53px;
+  text-align: center;
+}
+
+.section2-para {
+  margin-top: 19px;
+  color: #FFF;
+  font-size: 24px;
+  text-align: center;
+}
+
+.section2-list {
+  width: 83.21%;
+  /* margin: 0 8.39%; */
+  margin: 80px 8.39% 0;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.sec2-listitem {
+  padding-bottom: 24px;
+  background-color: #FFF;
+  flex-basis: 28.32%;
+}
+
+.social-links {
+  width: 81.11%;
+  margin: 0 auto;
+  display: none;
+  transform: translateY(-274%);
+  opacity: 0.8;
+  /* position: relative; */
+}
+
+.member-img {
+  position: relative;
+  z-index: 5;
+}
+
+
+.member-name {
+  font-size: 32px;
+  text-align: center;
+  /* transform: translateY(-55px); */
+  /* transform: translateY(-150%); */
+  transform: translateY(33px);
+}
+
+.member-profile {
+  text-align: center;
+  /* transform: translateY(-49px); */
+  /* transform: translateY(-168%); */
+  transform: translateY(39px);
+  font-size: 25px;
+}
+
+.member-info {
+  padding: 0 7.02% 0 4.84%;
+  margin-top: 75px;
+  font-size: 25px;
+  /* transform: translateY(-12px); */
+  /* transform: translateY(-8%); */
+}
+
+.section3 > div > h3 {
+  font-size: 53px;
+  text-align: center;
+}
+
+.section3 > div > p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-section > div > h4 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.contact-section > div > ul {
+  font-size: 24px;
+  display: list-item;
+}
+
+.infoitem {
+  display: list-item;
+}
+
+.name-error ,.email-error ,.message-error {
+  display: none;
+}
+
+.contact-section {
+  display: flex;
+}
+
+.contact-form {
+  /* flex-basis: 48.80%; */
+  flex-basis: 46.1%;
+}
+
+.section3 > div {
+  padding-top: 87px;
+}
+
+.section3-para {
+  margin-top: 20px;
+}
+
+.form-top {
+  display: flex;
+}
+
+.ip-name,.ip-email {
+  width: 100%;
+}
+
+.contact-section > div {
+width: 100%;
+}
+
+.ip-name > input ,.ip-email > input ,textarea {
+  width: 100%;
+  padding: 30px 2.92%;
+  font-size: 23px;
+
+}
+
+.submit-btn {
+  padding: 19px 6.43% 14px;
+  margin-left: auto;
+  border: none;
+  display: block;
+  background-color: #1bbc9b;
+  color: #FFF;
+  font-size: 23px;
+  text-transform: uppercase;
+
+}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -261,11 +410,6 @@ nav {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
 
 
  /*=================================
