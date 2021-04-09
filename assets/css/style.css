@@ -410,6 +410,36 @@ width: 100%;
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  background-color: #2d3e50;
+  color: #FFF;
+}
+
+footer > div {
+  padding: 68px 0 66px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer-para {
+  font-size: 22px;
+}
+
+.back-to-top {
+  width: 4.79%;
+  display: inline-block;
+  /* text-indent: -9999px; */
+  background-color: #1bbc9b;
+  
+}
+
+.back-to-top::before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  content: "\f09a";
+}
+
+
 
 
  /*=================================
