@@ -441,6 +441,10 @@ z-index: 0;
 .list-img:hover {
   cursor: pointer;
 }
+
+.menu-bar {
+  display: none;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -488,8 +492,38 @@ footer > div {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 768px) {
+.menu-bar {
+  display: block;
+}
 
+.navbar li:nth-of-type(n+2) {
+  display: none;
+}
 
+.portfolio-filters {
+  width: 100%;
+}
+
+.portfolio-filters li {
+  padding: 19px 0.71%;
+}
+
+.portfolio-item {
+  flex-basis: 36.18%;
+}
+
+.portfolio-item:nth-of-type(4n) {
+  margin-right: 7.25%;
+}
+
+.member-name ,
+.member-profile {
+  letter-spacing :-1px;
+}
+
+.sec2-listitem {
+  flex-basis: 31.32%;
+}
 
 }  
