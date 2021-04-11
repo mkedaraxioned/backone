@@ -127,13 +127,24 @@ header > div {
 
 nav {
   padding-top: 27px;
-  flex-basis: 36.07%;
+  /* flex-basis: 36.07%; */
+  flex-basis: 77.91%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar li {
-  padding-right: 38px;
+  /* padding-right: 38px; */
+  margin-right: 38px;
   font-size: 26px;
   text-transform: uppercase;
+}
+
+.navbar li:hover {
+  /* padding: 20px 1.16%; */
+  padding: 18px;
+  background-color: #1bbc9b;
+  
 }
 
 .navbar li > a {
@@ -172,10 +183,11 @@ nav {
   font-size: 23px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .section1-top {
-  width: 49.02%;
+  /* width: 49.02%; */
   /* width: 41.26%; */
   /* margin: 0 auto; */
   margin: 91px auto 85px;
@@ -245,7 +257,9 @@ nav {
 }
 
 .portfolio-filters {
-  margin-top: 64px;
+  width: 49.02%;
+  /* margin-top: 64px; */
+  margin: 64px auto 0;
   display: flex;
   justify-content: space-between;
 }
@@ -365,7 +379,10 @@ nav {
 }
 
 .section3 > div {
-  padding-top: 87px;
+  /* padding-top: 87px; */
+  /* padding-bottom: 112px; */
+  padding: 87px 0 112px;
+  background-color: #ecf0f1;
 }
 
 .section3-para {
@@ -403,6 +420,27 @@ width: 100%;
 
 }
 
+.list-img > img:hover + .portfolio-inner {
+  display: block;
+}
+
+.member-img:hover{
+z-index: 0;
+}
+
+.member-img:hover + .social-links {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* .social-links:hover + .member-img {
+  z-index: 0;
+} */
+
+.list-img:hover {
+  cursor: pointer;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -430,13 +468,15 @@ footer > div {
   display: inline-block;
   /* text-indent: -9999px; */
   background-color: #1bbc9b;
+  cursor: pointer;
   
 }
 
 .back-to-top::before {
   font-family: "FontAwesome";
   font-size: 30px;
-  content: "\f09a";
+  content: "\f106";
+  float: right;
 }
 
 
