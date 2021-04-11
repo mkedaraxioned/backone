@@ -527,3 +527,31 @@ footer > div {
 }
 
 }  
+
+@media only screen and (max-width: 767px) {
+
+.portfolio-item {
+  flex-basis: 74.18%;
+}
+
+.portfolio-filters li {
+  margin-bottom: 10px;
+}
+
+.portfolio-filters {
+  flex-direction: column;
+}
+
+.section2-list {
+  flex-direction: column;
+}
+
+.contact-section {  
+  flex-direction:column;
+}
+
+.back-to-top {
+  width:50%;
+}
+
+}
