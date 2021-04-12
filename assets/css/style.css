@@ -233,12 +233,12 @@ nav {
   border-radius: 50%;
 }
 
-.list-img > img:hover{ 
+/* .list-img > img:hover{ 
   opacity: 0.5;
-}
+} */
 
 .portfolio-inner {
-  display: none;
+  /* display: none; */
   transform: translateY(-130%); 
 }
 
@@ -313,7 +313,7 @@ nav {
 
 .member-img {
   position: relative;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 
@@ -420,15 +420,15 @@ width: 100%;
 
 }
 
-.list-img > img:hover + .portfolio-inner {
+.portfolio-inner-hover {
   display: block;
 }
 
-.member-img:hover{
+.member-img-hover{
 z-index: 0;
 }
 
-.member-img:hover + .social-links {
+.social-links-hover {
   display: block;
   cursor: pointer;
   transition: all 0.3s;
@@ -444,6 +444,14 @@ z-index: 0;
 
 .menu-bar {
   display: none;
+}
+
+.z-zero {
+  z-index: 0;
+}
+
+.z-five {
+  z-index: 5;
 }
 /*=================================
   main styling ends here
