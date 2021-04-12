@@ -484,6 +484,22 @@ footer > div {
 }
 
 
+.bg-darkgreen {
+  background-color:#1bbc9b;
+}
+  
+.bg-green {
+  background-color:#50ebcb;
+}
+  
+.hide-img {
+  display:none;
+}
+  
+.show-img {
+  display:block;
+}
+
 
 
  /*=================================
