@@ -66,7 +66,62 @@ function move_to_top() {
     document.body.scrollTop = 0;
   }
 
+// form validation  
+var form = document.querySelector(".contact-form");
+form.addEventListener('submit', validateForm);
+var form_ip=document.getElementsByClassName('form-ip');
+var inputs=['name','email','message'];
+var persons= {};
+function validateForm(event) {
+    event.preventDefault();
+    
+    for(var i = 0 ; i < inputs.length; i++)
+    {   
+        persons[inputs[i]]=form_ip[i].value;
+        
+    }
+    
+    console.log("persons ="+persons);
+    var formFlag=0;
 
+    for(var i = 0 ; i < inputs.length; i++)
+    {   
+        if(persons[inputs[i]]=="")
+        {
+            var err_class='.'+inputs[i]+'-error';
+            var err_span=document.querySelector(err_class);
+            err_span.innerHTML="Please enter "+inputs[i];
+            err_span.classList.add('show-element')
+            form_ip[i].classList.add('border-red');
+            // alert("Please enter "+inputs[i]);
+            formFlag=1; 
+        }
+    }
+    submitform();
+
+    function submitform(){
+
+        if(formFlag===0) 
+        {
+          alert("Thank you");
+          var form_ip=document.getElementsByClassName('form-ip');
+          for(var i=0;i<form_ip.length;i++)
+          {   
+              if(form_ip[i].classList.contains('show-element'))
+              {
+                  form_ip[i].classList.remove('show-element');
+                  form_ip[i].classList.add('hide-element');                  
+              }
+              if(form_ip[i].classList.contains('border-red'))
+              form_ip[i].classList.remove('border-red');
+          }
+        }
+    }
+
+
+
+
+  }
 
 
 
