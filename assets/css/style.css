@@ -500,7 +500,17 @@ footer > div {
   display:block;
 }
 
+.hide-element {
+  display: none;
+}
 
+.show-element {
+  display: block;
+}
+
+.border-red {
+  border: 2px solid #f00;
+}
 
  /*=================================
   footer styling ends here
