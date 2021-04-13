@@ -216,7 +216,9 @@ nav {
   
 .portfolio-item > a {
   width: 100%;
+  display: none;
   z-index: 5;
+  transition: all 0.3s ease;
 }
 
 .list-inner-img {
@@ -313,7 +315,8 @@ nav {
 
 .member-img {
   position: relative;
-  /* z-index: 5; */
+  z-index: 5;
+  transition: 0.5s all;
 }
 
 
@@ -424,9 +427,6 @@ width: 100%;
   display: block;
 }
 
-.member-img-hover{
-z-index: 0;
-}
 
 .social-links-hover {
   display: block;
@@ -434,12 +434,21 @@ z-index: 0;
   transition: all 0.3s;
 }
 
+.member-img:hover{
+z-index: 0;
+}
+
+.member-img:hover + .social-links {
+  display: block;
+  cursor: pointer;
+  z-index: 0;
+}
+
 /* .social-links:hover + .member-img {
   z-index: 0;
 } */
 
 .list-img:hover {
-  cursor: pointer;
 }
 
 .menu-bar {
@@ -452,6 +461,12 @@ z-index: 0;
 
 .z-five {
   z-index: 5;
+}
+
+.list-img:hover ~ a {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 /*=================================
   main styling ends here
