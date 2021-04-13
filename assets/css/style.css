@@ -468,6 +468,8 @@ z-index: 0;
   cursor: pointer;
   transition: all 0.3s;
 }
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -546,7 +548,11 @@ footer > div {
   display: block;
 }
 
-.navbar li:nth-of-type(n+2) {
+/* .navbar li:nth-of-type(n+2) {
+  display: none;
+} */
+
+.hide-menu-item {
   display: none;
 }
 
@@ -573,6 +579,15 @@ footer > div {
 
 .sec2-listitem {
   flex-basis: 31.32%;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-menu-item {
+  display: block;
 }
 
 }  
