@@ -89,14 +89,15 @@ function validateForm(event) {
 
         if(formFlag===0) 
         {
+          var span_err_shown=document.querySelectorAll(".span-error");
           alert("Thank you");
           var form_ip=document.getElementsByClassName('form-ip');
           for(var i=0;i<form_ip.length;i++)
           {   
-              if(form_ip[i].classList.contains('show-element'))
+              if(span_err_shown[i].classList.contains('show-element'))
               {
-                  form_ip[i].classList.remove('show-element');
-                  form_ip[i].classList.add('hide-element');                  
+                span_err_shown[i].classList.remove('show-element');
+                span_err_shown[i].classList.add('hide-element');                  
               }
               if(form_ip[i].classList.contains('border-red'))
               form_ip[i].classList.remove('border-red');
