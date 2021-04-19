@@ -533,9 +533,9 @@ footer > div {
 }
 
 .back-to-top {
-  width: 4.79%;
+  /* width: 4.79%; */
   display: inline-block;
-  /* text-indent: -9999px; */
+  text-indent: -9999px;
   background-color: #1bbc9b;
   cursor: pointer;
   
@@ -546,6 +546,8 @@ footer > div {
   font-size: 30px;
   content: "\f106";
   float: right;
+  text-indent: initial;
+  padding: 21px 25px;
 }
 
 
