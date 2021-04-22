@@ -270,6 +270,8 @@ nav {
   margin-bottom: 96px;
 }
 
+/* test start */
+
 .section2 {
   background-color: #16a086;
 }
@@ -292,7 +294,6 @@ nav {
 
 .section2-list {
   width: 83.21%;
-  /* margin: 0 8.39%; */
   margin: 80px 8.39% 0;
   display: flex;
   justify-content: space-between;
@@ -300,6 +301,7 @@ nav {
   
 .sec2-listitem {
   padding-bottom: 24px;
+  position: relative;
   background-color: #FFF;
   flex-basis: 28.32%;
 }
@@ -307,15 +309,15 @@ nav {
 .social-links {
   width: 81.11%;
   margin: 0 auto;
-  display: none;
-  transform: translateY(-274%);
   opacity: 0.8;
-  /* position: relative; */
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  visibility: hidden;
 }
 
 .member-img {
-  position: relative;
-  z-index: 5;
   transition: 0.5s all;
 }
 
@@ -323,15 +325,11 @@ nav {
 .member-name {
   font-size: 32px;
   text-align: center;
-  /* transform: translateY(-55px); */
-  /* transform: translateY(-150%); */
   transform: translateY(33px);
 }
 
 .member-profile {
   text-align: center;
-  /* transform: translateY(-49px); */
-  /* transform: translateY(-168%); */
   transform: translateY(39px);
   font-size: 25px;
 }
@@ -340,9 +338,38 @@ nav {
   padding: 0 7.02% 0 4.84%;
   margin-top: 75px;
   font-size: 25px;
-  /* transform: translateY(-12px); */
-  /* transform: translateY(-8%); */
 }
+
+.social-links-hover {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.member-img:hover + .social-links {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.social-links:hover  {
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+.menu-bar {
+  display: none;
+}
+
+.z-zero {
+  z-index: 0;
+}
+
+.z-five {
+  z-index: 5;
+}
+/* test end */
+
 
 .section3 > div > h3 {
   font-size: 53px;
@@ -494,42 +521,6 @@ flex-basis: 50%;
 
 .portfolio-inner-hover {
   display: block;
-}
-
-
-.social-links-hover {
-  display: block;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.member-img:hover{
-z-index: 0;
-}
-
-.member-img:hover + .social-links {
-  display: block;
-  cursor: pointer;
-  z-index: 0;
-}
-
-/* .social-links:hover + .member-img {
-  z-index: 0;
-} */
-
-.list-img:hover {
-}
-
-.menu-bar {
-  display: none;
-}
-
-.z-zero {
-  z-index: 0;
-}
-
-.z-five {
-  z-index: 5;
 }
 
 .list-img:hover ~ a {
